@@ -1,0 +1,86 @@
+server:
+  port: \
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  application:
+    name: fruit-recognition
+  datasource:
+    url: jdbc:postgresql://\:\/\
+    username: \
+    password: \
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 300000
+      connection-timeout: 20000
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          batch_size: 50
+          order_inserts: true
+          order_updates: true
+  liquibase:
+    enabled: true
+    change-log: classpath:db/changelog/db.changelog-master.xml
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    deserialization:
+      fail-on-unknown-properties: false
+    date-format: yyyy-MM-dd'T'HH:mm:ss.SSS'Z'
+    time-zone: UTC
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+  web:
+    locale: ru_RU
+
+ml:
+  server:
+    url: \
+
+app:
+  upload-dir: \
+  jwt:
+    secret: \
+    access-expiration: 3600000
+    refresh-expiration: 2592000000
+
+cors:
+  allowed-origins: \
+
+logging:
+  level:
+    root: INFO
+    com.fruit.recognition: DEBUG
+    org.springframework.web: INFO
+    org.springframework.security: INFO
+    org.hibernate.SQL: WARN
+    liquibase: INFO
+  file:
+    path: logs
+    name: logs/app.log
+  logback:
+    rollingpolicy:
+      max-history: 30
+      max-file-size: 10MB
+      total-size-cap: 500MB
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /api-docs
+  show-actuator: false
