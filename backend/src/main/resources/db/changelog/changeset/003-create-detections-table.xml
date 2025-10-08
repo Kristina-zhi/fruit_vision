@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
+    <changeSet id="003" author="fruit-vision">
+        <createTable tableName="detections">
+            <column name="id" type="BIGINT" autoIncrement="true"><constraints primaryKey="true" nullable="false"/></column>
+            <column name="analyze_id" type="BIGINT"><constraints nullable="false" foreignKeyName="fk_detection_analyze" references="analyzes(id)"/></column>
+            <column name="class_id" type="INTEGER"><constraints nullable="false"/></column>
+            <column name="class_name" type="VARCHAR(255)"><constraints nullable="false"/></column>
+            <column name="confidence" type="DOUBLE"><constraints nullable="false"/></column>
+            <column name="x_min" type="DOUBLE"><constraints nullable="false"/></column>
+            <column name="y_min" type="DOUBLE"><constraints nullable="false"/></column>
+            <column name="x_max" type="DOUBLE"><constraints nullable="false"/></column>
+            <column name="y_max" type="DOUBLE"><constraints nullable="false"/></column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
