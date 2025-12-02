@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "Fruit Vision",
+    "slug": "fruit-vision",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#4CAF50"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fruit.vision",
+      "infoPlist": { "NSCameraUsageDescription": "This app needs camera access to take photos of fruits for recognition." }
+    },
+    "android": {
+      "adaptiveIcon": { "foregroundImage": "./assets/adaptive-icon.png", "backgroundColor": "#4CAF50" },
+      "package": "com.fruit.vision",
+      "permissions": ["android.permission.CAMERA"]
+    },
+    "web": { "bundler": "metro", "favicon": "./assets/favicon.png" },
+    "plugins": [
+      ["expo-camera", { "cameraPermission": "Allow Fruit Vision to access your camera" }],
+      ["expo-image-picker", { "photosPermission": "Allow Fruit Vision to access your photos" }]
+    ]
+  }
+}
