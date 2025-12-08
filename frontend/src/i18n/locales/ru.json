@@ -1,0 +1,20 @@
+{
+  "login": "Войти",
+  "register": "Регистрация",
+  "email": "Эл. почта",
+  "password": "Пароль",
+  "take_photo": "Сделать фото",
+  "upload_from_gallery": "Загрузить из галереи",
+  "analyze": "Анализировать",
+  "history": "История",
+  "logout": "Выйти",
+  "detections": "Обнаружения",
+  "confidence": "Уверенность",
+  "no_results": "Пока нет результатов",
+  "error": "Ошибка",
+  "success": "Успешно",
+  "loading": "Загрузка...",
+  "analyze_image": "Анализ изображения",
+  "select_source": "Выберите источник изображения",
+  "cancel": "Отмена"
+}

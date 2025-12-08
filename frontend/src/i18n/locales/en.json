@@ -1,0 +1,20 @@
+{
+  "login": "Login",
+  "register": "Register",
+  "email": "Email",
+  "password": "Password",
+  "take_photo": "Take Photo",
+  "upload_from_gallery": "Upload from Gallery",
+  "analyze": "Analyze",
+  "history": "History",
+  "logout": "Logout",
+  "detections": "Detections",
+  "confidence": "Confidence",
+  "no_results": "No results yet",
+  "error": "Error",
+  "success": "Success",
+  "loading": "Loading...",
+  "analyze_image": "Analyze Image",
+  "select_source": "Select image source",
+  "cancel": "Cancel"
+}
