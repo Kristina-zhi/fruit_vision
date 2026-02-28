@@ -1,12 +1,12 @@
 import io
 from PIL import Image
 from loguru import logger
-from app.core import settings
-from app.utils.detection import format_detections, DetectionResult
+from app.core.settings import settings
+from app.utils.detection import DetectionResult
 
 def process_image(image_bytes: bytes, filename: str) -> dict:
     from app.main import app
-    model_loader = app.state.model_loader
+    model_loader = getattr(app.state, "model_loader", None)
     if model_loader is None:
         logger.warning("Model not loaded, returning mock detections")
         return get_mock_detections()

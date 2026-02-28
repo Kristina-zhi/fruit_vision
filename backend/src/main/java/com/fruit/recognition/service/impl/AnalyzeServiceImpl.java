@@ -15,6 +15,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
+import java.io.IOException;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
@@ -38,24 +39,28 @@ public class AnalyzeServiceImpl implements AnalyzeService {
 
     @Override @Transactional
     public AnalyzeResponse analyze(MultipartFile file) {
-        var storedPath = fileStorageService.store(file);
-        var currentUser = userService.getCurrentUser();
-        var mlResponse = mlServiceClient.sendImage(file.getInputStream(), file.getOriginalFilename());
-        var analyze = new Analyze();
-        analyze.setFileName(file.getOriginalFilename());
-        analyze.setFilePath(storedPath.toString());
-        analyze.setUser(currentUser);
-        analyze.setDetections(mlResponse.detections().stream().map(d -> {
-            var det = new Detection();
-            det.setClassId(d.classId()); det.setClassName(d.className());
-            det.setConfidence(d.confidence());
-            det.setXMin(d.bbox().xMin()); det.setYMin(d.bbox().yMin());
-            det.setXMax(d.bbox().xMax()); det.setYMax(d.bbox().yMax());
-            det.setAnalyze(analyze);
-            return det;
-        }).collect(Collectors.toList()));
-        analyze = analyzeRepository.save(analyze);
-        return toResponse(analyze);
+        try {
+            var storedPath = fileStorageService.store(file);
+            var currentUser = userService.getCurrentUser();
+            var mlResponse = mlServiceClient.sendImage(file.getInputStream(), file.getOriginalFilename());
+            var analyze = new Analyze();
+            analyze.setFileName(file.getOriginalFilename());
+            analyze.setFilePath(storedPath.toString());
+            analyze.setUser(currentUser);
+            analyze.setDetections(mlResponse.detections().stream().map(d -> {
+                var det = new Detection();
+                det.setClassId(d.classId()); det.setClassName(d.className());
+                det.setConfidence(d.confidence());
+                det.setXMin(d.bbox().xMin()); det.setYMin(d.bbox().yMin());
+                det.setXMax(d.bbox().xMax()); det.setYMax(d.bbox().yMax());
+                det.setAnalyze(analyze);
+                return det;
+            }).collect(Collectors.toList()));
+            analyze = analyzeRepository.save(analyze);
+            return toResponse(analyze);
+        } catch (IOException e) {
+            throw new RuntimeException("Failed to read uploaded file", e);
+        }
     }
 
     @Override

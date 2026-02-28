@@ -25,4 +25,5 @@ app.include_router(router, prefix="")
 
 @app.get("/health")
 async def health():
-    return {"status": "healthy", "model_loaded": app.state.model_loader is not None}
+    model_loaded = getattr(app.state, "model_loader", None) is not None
+    return {"status": "healthy", "model_loaded": model_loaded}
