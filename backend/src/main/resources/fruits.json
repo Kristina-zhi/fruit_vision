@@ -1,0 +1,2054 @@
+[
+  {
+    "name": "avocado",
+    "display_name": "Авокадо",
+    "description": "Авокадо - маслянистый тропический фрукт с кремовой текстурой, богатый полезными жирами и питательными веществами.",
+    "calories": 160,
+    "season": "Круглый год",
+    "location": "Мексика, Калифорния, Перу, Чили",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT80-rqIS1XIikt-fbm5fmFwuFmA0yNvBbMhbYRni-rGa-eIqud4CIqwT7_SpwZedzkHAyx64IA03Ze3eNURf1QTu6VzG5lgQWRywDxrw&s=10",
+    "vitamins": [
+      {
+        "vitamin_name": "Витамин C",
+        "amount": "10mg"
+      },
+      {
+        "vitamin_name": "Витамин E",
+        "amount": "2.07mg"
+      },
+      {
+        "vitamin_name": "Фолиевая кислота",
+        "amount": "81mcg"
+      },
+      {
+        "vitamin_name": "Витамин K",
+        "amount": "21mcg"
+      },
+      {
+        "vitamin_name": "Витамин B5",
+        "amount": "1.4mg"
+      },
+      {
+        "vitamin_name": "Витамин B6",
+        "amount": "0.3mg"
+      },
+      {
+        "vitamin_name": "Витамин B3",
+        "amount": "1.7mg"
+      },
+      {
+        "vitamin_name": "Витамин B2",
+        "amount": "0.1mg"
+      },
+      {
+        "vitamin_name": "Витамин B1",
+        "amount": "0.1mg"
+      },
+      {
+        "vitamin_name": "Витамин A",
+        "amount": "7mcg"
+      }
+    ],
+      "fruit_nutrition": {
+    "proteins": 2.0,
+    "fats": 14.7,
+    "carbohydrates": 8.5,
+    "fiber": 6.7,
+    "water": 73.2
+  },
+    "minerals": [
+      {
+        "mineral_name": "Калий (K)",
+        "amount": "485mg"
+      },
+      {
+        "mineral_name": "Фосфор (P)",
+        "amount": "52mg"
+      },
+      {
+        "mineral_name": "Магний (Mg)",
+        "amount": "29mg"
+      },
+      {
+        "mineral_name": "Кальций (Ca)",
+        "amount": "12mg"
+      },
+      {
+        "mineral_name": "Натрий (Na)",
+        "amount": "7mg"
+      },
+      {
+        "mineral_name": "Железо (Fe)",
+        "amount": "0.5mg"
+      },
+      {
+        "mineral_name": "Цинк (Zn)",
+        "amount": "0.6mg"
+      },
+      {
+        "mineral_name": "Марганец (Mn)",
+        "amount": "0.1mg"
+      },
+      {
+        "mineral_name": "Медь (Cu)",
+        "amount": "0.2mg"
+      },
+      {
+        "mineral_name": "Селен (Se)",
+        "amount": "0.4mcg"
+      }
+    ],
+    "other_nutrients": [
+      {
+        "nutrient_name": "Углеводы (общие)",
+        "amount": "8.5g"
+      },
+      {
+        "nutrient_name": "Зола",
+        "amount": "1.6g"
+      },
+      {
+        "nutrient_name": "бета-Каротин",
+        "amount": "0.1mg"
+      },
+      {
+        "nutrient_name": "Лютеин + Зеаксантин",
+        "amount": "271mcg"
+      },
+      {
+        "nutrient_name": "Ниацин",
+        "amount": "1.7mg"
+      },
+      {
+        "nutrient_name": "Омега-3 жирные кислоты",
+        "amount": "0.1g"
+      },
+      {
+        "nutrient_name": "Омега-6 жирные кислоты",
+        "amount": "1.7g"
+      },
+      {
+        "nutrient_name": "Насыщенные жирные кислоты",
+        "amount": "2.1g"
+      },
+      {
+        "nutrient_name": "Мононенасыщенные жирные кислоты",
+        "amount": "9.8g"
+      },
+      {
+        "nutrient_name": "Полиненасыщенные жирные кислоты",
+        "amount": "1.8g"
+      },
+      {
+        "nutrient_name": "Фитостеролы",
+        "amount": "87mg"
+      },
+      {
+        "nutrient_name": "Триптофан",
+        "amount": "0.03g"
+      },
+      {
+        "nutrient_name": "Треонин",
+        "amount": "0.07g"
+      },
+      {
+        "nutrient_name": "Изолейцин",
+        "amount": "0.08g"
+      },
+      {
+        "nutrient_name": "Лейцин",
+        "amount": "0.14g"
+      },
+      {
+        "nutrient_name": "Лизин",
+        "amount": "0.13g"
+      },
+      {
+        "nutrient_name": "Метионин",
+        "amount": "0.04g"
+      },
+      {
+        "nutrient_name": "Цистин",
+        "amount": "0.03g"
+      },
+      {
+        "nutrient_name": "Фенилаланин",
+        "amount": "0.1g"
+      },
+      {
+        "nutrient_name": "Тирозин",
+        "amount": "0.05g"
+      },
+      {
+        "nutrient_name": "Валин",
+        "amount": "0.11g"
+      },
+      {
+        "nutrient_name": "Аргинин",
+        "amount": "0.09g"
+      },
+      {
+        "nutrient_name": "Гистидин",
+        "amount": "0.05g"
+      },
+      {
+        "nutrient_name": "Аланин",
+        "amount": "0.11g"
+      },
+      {
+        "nutrient_name": "Аспарагиновая кислота",
+        "amount": "0.24g"
+      },
+      {
+        "nutrient_name": "Глутаминовая кислота",
+        "amount": "0.29g"
+      },
+      {
+        "nutrient_name": "Глицин",
+        "amount": "0.1g"
+      },
+      {
+        "nutrient_name": "Пролин",
+        "amount": "0.1g"
+      },
+      {
+        "nutrient_name": "Серин",
+        "amount": "0.11g"
+      }
+    ]
+  },
+  {
+    "name": "banana",
+    "display_name": "Банан",
+    "description": "Банан - сладкий и питательный тропический фрукт, известный своей кремообразной текстурой и высоким содержанием калия.",
+    "calories": 96,
+    "season": "Круглый год",
+    "location": "Индия, Китай, Индонезия, Филиппины",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg",
+    "vitamins": [
+      {
+        "vitamin_name": "Витамин C",
+        "amount": "10.0mg"
+      },
+      {
+        "vitamin_name": "Витамин B6",
+        "amount": "0.4mg"
+      },
+      {
+        "vitamin_name": "Витамин A",
+        "amount": "20mcg"
+      },
+      {
+        "vitamin_name": "Витамин B1",
+        "amount": "40mcg"
+      },
+      {
+        "vitamin_name": "Витамин B2",
+        "amount": "50mcg"
+      },
+      {
+        "vitamin_name": "Витамин B4 (холин)",
+        "amount": "9.8mg"
+      },
+      {
+        "vitamin_name": "Витамин B5",
+        "amount": "0.2mg"
+      },
+      {
+        "vitamin_name": "Фолиевая кислота (B9)",
+        "amount": "10mcg"
+      },
+      {
+        "vitamin_name": "Витамин E",
+        "amount": "0.4mg"
+      },
+      {
+        "vitamin_name": "Витамин H (биотин)",
+        "amount": "4mcg"
+      },
+      {
+        "vitamin_name": "Витамин K",
+        "amount": "0.5mcg"
+      },
+      {
+        "vitamin_name": "Витамин B3 (PP)",
+        "amount": "0.9mg"
+      }
+    ],
+      "fruit_nutrition": {
+    "proteins": 1.5,
+    "fats": 0.5,
+    "carbohydrates": 21.0,
+    "fiber": 1.7,
+    "water": 74.0
+      },
+    "minerals": [
+      {
+        "mineral_name": "Калий (K)",
+        "amount": "348mg"
+      },
+      {
+        "mineral_name": "Магний (Mg)",
+        "amount": "42mg"
+      },
+      {
+        "mineral_name": "Фосфор (P)",
+        "amount": "28mg"
+      },
+      {
+        "mineral_name": "Кальций (Ca)",
+        "amount": "8mg"
+      },
+      {
+        "mineral_name": "Натрий (Na)",
+        "amount": "31mg"
+      },
+      {
+        "mineral_name": "Железо (Fe)",
+        "amount": "0.6mg"
+      },
+      {
+        "mineral_name": "Марганец (Mn)",
+        "amount": "0.3mg"
+      },
+      {
+        "mineral_name": "Медь (Cu)",
+        "amount": "78mcg"
+      },
+      {
+        "mineral_name": "Цинк (Zn)",
+        "amount": "0.15mg"
+      },
+      {
+        "mineral_name": "Селен (Se)",
+        "amount": "1mcg"
+      },
+      {
+        "mineral_name": "Кремний (Si)",
+        "amount": "77mg"
+      },
+      {
+        "mineral_name": "Сера (S)",
+        "amount": "10.9mg"
+      },
+      {
+        "mineral_name": "Хлор (Cl)",
+        "amount": "47mg"
+      },
+      {
+        "mineral_name": "Алюминий (Al)",
+        "amount": "19mcg"
+      },
+      {
+        "mineral_name": "Бор (B)",
+        "amount": "372mcg"
+      },
+      {
+        "mineral_name": "Ванадий (V)",
+        "amount": "2mcg"
+      },
+      {
+        "mineral_name": "Йод (I)",
+        "amount": "0.05mcg"
+      },
+      {
+        "mineral_name": "Кобальт (Co)",
+        "amount": "0.16mcg"
+      },
+      {
+        "mineral_name": "Литий (Li)",
+        "amount": "3mcg"
+      },
+      {
+        "mineral_name": "Молибден (Mo)",
+        "amount": "2.7mcg"
+      },
+      {
+        "mineral_name": "Никель (Ni)",
+        "amount": "4mcg"
+      },
+      {
+        "mineral_name": "Рубидий (Rb)",
+        "amount": "63mcg"
+      },
+      {
+        "mineral_name": "Стронций (Sr)",
+        "amount": "1.3mcg"
+      },
+      {
+        "mineral_name": "Фтор (F)",
+        "amount": "2.2mcg"
+      },
+      {
+        "mineral_name": "Хром (Cr)",
+        "amount": "0.17mcg"
+      }
+    ],
+    "other_nutrients": [
+      {
+        "nutrient_name": "Углеводы (общие)",
+        "amount": "22.7g"
+      },
+      {
+        "nutrient_name": "Органические кислоты",
+        "amount": "0.4g"
+      },
+      {
+        "nutrient_name": "Зола",
+        "amount": "0.9g"
+      },
+      {
+        "nutrient_name": "Крахмал и декстрины",
+        "amount": "2.0g"
+      },
+      {
+        "nutrient_name": "Моно- и дисахариды (сахара)",
+        "amount": "19.0g"
+      },
+      {
+        "nutrient_name": "Омега-3 жирные кислоты",
+        "amount": "0.03g"
+      },
+      {
+        "nutrient_name": "Омега-6 жирные кислоты",
+        "amount": "0.05g"
+      },
+      {
+        "nutrient_name": "Насыщенные жирные кислоты",
+        "amount": "0.2g"
+      }
+    ]
+  },
+  {
+    "name": "carambola",
+    "display_name": "Карамбола",
+    "description": "Экзотический фрукт звёздчатой формы с кисло-сладким вкусом, богатый витамином C и антиоксидантами",
+    "calories": 31,
+    "season": "Лето–Осень",
+    "location": "Юго-Восточная Азия, Индия, Бразилия",
+    "image_url": "https://tropics-seeds.ru/_sh/9/918b_1.jpg",
+    "vitamins": [
+      {
+        "vitamin_name": "Витамин C",
+        "amount": "34.4mg"
+      },
+      {
+        "vitamin_name": "Фолиевая кислота (B9)",
+        "amount": "12mcg"
+      },
+      {
+        "vitamin_name": "Витамин A",
+        "amount": "3mcg"
+      },
+      {
+        "vitamin_name": "Витамин B1",
+        "amount": "14mcg"
+      },
+      {
+        "vitamin_name": "Витамин B2",
+        "amount": "16mcg"
+      },
+      {
+        "vitamin_name": "Витамин B4 (холин)",
+        "amount": "7.6mg"
+      },
+      {
+        "vitamin_name": "Витамин B5",
+        "amount": "0.4mg"
+      },
+      {
+        "vitamin_name": "Витамин B6",
+        "amount": "17mcg"
+      },
+      {
+        "vitamin_name": "Витамин E",
+        "amount": "0.1mg"
+      },
+      {
+        "vitamin_name": "Витамин B3 (PP)",
+        "amount": "0.4mg"
+      }
+    ],
+    "fruit_nutrition": {
+        "proteins": 1.0,
+        "fats": 0.3,
+        "carbohydrates": 3.9,
+        "fiber": 2.8,
+        "water": 91.4
+    },
+    "minerals": [
+      {
+        "mineral_name": "Калий (K)",
+        "amount": "133mg"
+      },
+      {
+        "mineral_name": "Фосфор (P)",
+        "amount": "12mg"
+      },
+      {
+        "mineral_name": "Магний (Mg)",
+        "amount": "10mg"
+      },
+      {
+        "mineral_name": "Кальций (Ca)",
+        "amount": "3mg"
+      },
+      {
+        "mineral_name": "Натрий (Na)",
+        "amount": "2mg"
+      },
+      {
+        "mineral_name": "Сера (S)",
+        "amount": "10.4mg"
+      },
+      {
+        "mineral_name": "Железо (Fe)",
+        "amount": "0.1mg"
+      },
+      {
+        "mineral_name": "Медь (Cu)",
+        "amount": "137mcg"
+      },
+      {
+        "mineral_name": "Цинк (Zn)",
+        "amount": "0.1mg"
+      },
+      {
+        "mineral_name": "Марганец (Mn)",
+        "amount": "0.04mg"
+      },
+      {
+        "mineral_name": "Селен (Se)",
+        "amount": "0.6mcg"
+      }
+    ],
+    "other_nutrients": [
+      {
+        "nutrient_name": "Углеводы (общие)",
+        "amount": "6.7g"
+      },
+      {
+        "nutrient_name": "Зола",
+        "amount": "0.5g"
+      },
+      {
+        "nutrient_name": "Моно- и дисахариды (сахара)",
+        "amount": "4.0g"
+      },
+      {
+        "nutrient_name": "альфа-Каротин",
+        "amount": "24mcg"
+      },
+      {
+        "nutrient_name": "бета-Каротин",
+        "amount": "0.03mg"
+      },
+      {
+        "nutrient_name": "Лютеин + Зеаксантин",
+        "amount": "66mcg"
+      },
+      {
+        "nutrient_name": "Аргинин",
+        "amount": "0.021g"
+      },
+      {
+        "nutrient_name": "Валин",
+        "amount": "0.05g"
+      },
+      {
+        "nutrient_name": "Гистидин",
+        "amount": "0.008g"
+      },
+      {
+        "nutrient_name": "Изолейцин",
+        "amount": "0.044g"
+      },
+      {
+        "nutrient_name": "Лейцин",
+        "amount": "0.077g"
+      },
+      {
+        "nutrient_name": "Лизин",
+        "amount": "0.077g"
+      },
+      {
+        "nutrient_name": "Метионин",
+        "amount": "0.021g"
+      },
+      {
+        "nutrient_name": "Треонин",
+        "amount": "0.044g"
+      },
+      {
+        "nutrient_name": "Триптофан",
+        "amount": "0.008g"
+      },
+      {
+        "nutrient_name": "Фенилаланин",
+        "amount": "0.037g"
+      },
+      {
+        "nutrient_name": "Аланин",
+        "amount": "0.071g"
+      },
+      {
+        "nutrient_name": "Аспарагиновая кислота",
+        "amount": "0.1g"
+      },
+      {
+        "nutrient_name": "Глицин",
+        "amount": "0.05g"
+      },
+      {
+        "nutrient_name": "Глутаминовая кислота",
+        "amount": "0.15g"
+      },
+      {
+        "nutrient_name": "Пролин",
+        "amount": "0.05g"
+      },
+      {
+        "nutrient_name": "Серин",
+        "amount": "0.083g"
+      },
+      {
+        "nutrient_name": "Тирозин",
+        "amount": "0.044g"
+      },
+      {
+        "nutrient_name": "Омега-3 жирные кислоты",
+        "amount": "0.03g"
+      },
+      {
+        "nutrient_name": "Омега-6 жирные кислоты",
+        "amount": "0.16g"
+      },
+      {
+        "nutrient_name": "Насыщенные жирные кислоты",
+        "amount": "0.02g"
+      },
+      {
+        "nutrient_name": "Мононенасыщенные жирные кислоты",
+        "amount": "0.03g"
+      },
+      {
+        "nutrient_name": "Полиненасыщенные жирные кислоты",
+        "amount": "0.18g"
+      },
+      {
+        "nutrient_name": "16:0 Пальмитиновая",
+        "amount": "0.01g"
+      },
+      {
+        "nutrient_name": "18:0 Стеариновая",
+        "amount": "0.01g"
+      },
+      {
+        "nutrient_name": "18:1 Олеиновая",
+        "amount": "0.03g"
+      },
+      {
+        "nutrient_name": "18:2 Линолевая",
+        "amount": "0.16g"
+      },
+      {
+        "nutrient_name": "18:3 Линоленовая",
+        "amount": "0.03g"
+      }
+    ]
+  },
+  {
+    "name": "coconut",
+    "display_name": "Кокос",
+    "description": "Кокос - крупный тропический плод с твердой скорлупой, белой мякотью и освежающей водой внутри. Широко используется в кулинарии и косметологии.",
+    "calories": 354,
+    "season": "круглый год",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Coconut.jpg/640px-Coconut.jpg",
+    "location": "Таиланд, Индонезия, Филиппины, Индия, Бразилия",
+    "vitamins": [
+      {
+        "vitamin_name": "Витамин C",
+        "amount": "3.3mg"
+      },
+      {
+        "vitamin_name": "Витамин B1",
+        "amount": "0.06mg"
+      },
+      {
+        "vitamin_name": "Витамин B2",
+        "amount": "0.02mg"
+      },
+      {
+        "vitamin_name": "Витамин B3 (PP)",
+        "amount": "0.5mg"
+      },
+      {
+        "vitamin_name": "Витамин B5",
+        "amount": "0.3mg"
+      },
+      {
+        "vitamin_name": "Витамин B6",
+        "amount": "0.05mg"
+      },
+      {
+        "vitamin_name": "Фолиевая кислота (B9)",
+        "amount": "26mcg"
+      },
+      {
+        "vitamin_name": "Витамин E",
+        "amount": "0.2mg"
+      },
+      {
+        "vitamin_name": "Витамин K",
+        "amount": "0.2mcg"
+      }
+    ],
+      "fruit_nutrition": {
+    "proteins": 3.3,
+    "fats": 33.5,
+    "carbohydrates": 15.2,
+    "fiber": 9.0,
+    "water": 47.0
+      },
+    "minerals": [
+      {
+        "mineral_name": "Калий (K)",
+        "amount": "356mg"
+      },
+      {
+        "mineral_name": "Фосфор (P)",
+        "amount": "113mg"
+      },
+      {
+        "mineral_name": "Магний (Mg)",
+        "amount": "32mg"
+      },
+      {
+        "mineral_name": "Кальций (Ca)",
+        "amount": "14mg"
+      },
+      {
+        "mineral_name": "Натрий (Na)",
+        "amount": "20mg"
+      },
+      {
+        "mineral_name": "Железо (Fe)",
+        "amount": "2.4mg"
+      },
+      {
+        "mineral_name": "Марганец (Mn)",
+        "amount": "1.5mg"
+      },
+      {
+        "mineral_name": "Медь (Cu)",
+        "amount": "435mcg"
+      },
+      {
+        "mineral_name": "Селен (Se)",
+        "amount": "10mcg"
+      },
+      {
+        "mineral_name": "Цинк (Zn)",
+        "amount": "1.1mg"
+      }
+    ],
+    "other_nutrients": [
+      {
+        "nutrient_name": "Углеводы (общие)",
+        "amount": "15.2g"
+      },
+      {
+        "nutrient_name": "Зола",
+        "amount": "1.0g"
+      },
+      {
+        "nutrient_name": "Витамин B4 (холин)",
+        "amount": "12.1mg"
+      },
+      {
+        "nutrient_name": "Насыщенные жирные кислоты",
+        "amount": "29.7g"
+      },
+      {
+        "nutrient_name": "Мононенасыщенные жирные кислоты",
+        "amount": "1.4g"
+      },
+      {
+        "nutrient_name": "Полиненасыщенные жирные кислоты",
+        "amount": "0.4g"
+      }
+    ]
+  },
+  {
+    "name": "fig",
+    "display_name": "Инжир",
+    "description": "Инжир - сладкий мягкий фрукт с нежной мякотью и съедобной кожурой, богатый клетчаткой и антиоксидантами.",
+    "calories": 74,
+    "season": "Лето–Осень",
+    "location": "Турция, Египет, Иран, США",
+    "image_url": "https://www.ok.org/wp-content/uploads/2025/02/OK-Newsletter-Shevat-5785-Email-Assets2.png",
+    "vitamins": [
+      {
+        "vitamin_name": "Витамин C",
+        "amount": "2.0mg"
+      },
+      {
+        "vitamin_name": "Витамин A",
+        "amount": "7mcg"
+      },
+      {
+        "vitamin_name": "Витамин B1",
+        "amount": "60mcg"
+      },
+      {
+        "vitamin_name": "Витамин B2",
+        "amount": "50mcg"
+      },
+      {
+        "vitamin_name": "Витамин B3 (PP)",
+        "amount": "0.4mg"
+      },
+      {
+        "vitamin_name": "Витамин B4 (холин)",
+        "amount": "4.7mg"
+      },
+      {
+        "vitamin_name": "Витамин B5",
+        "amount": "0.3mg"
+      },
+      {
+        "vitamin_name": "Витамин B6",
+        "amount": "0.1mg"
+      },
+      {
+        "vitamin_name": "Фолиевая кислота (B9)",
+        "amount": "6mcg"
+      },
+      {
+        "vitamin_name": "Витамин E",
+        "amount": "0.1mg"
+      },
+      {
+        "vitamin_name": "Витамин K",
+        "amount": "5mcg"
+      }
+    ],
+      "fruit_nutrition": {
+    "proteins": 0.8,
+    "fats": 0.3,
+    "carbohydrates": 16.3,
+    "fiber": 2.9,
+    "water": 79.1
+      },
+    "minerals": [
+      {
+        "mineral_name": "Калий (K)",
+        "amount": "232mg"
+      },
+      {
+        "mineral_name": "Кальций (Ca)",
+        "amount": "35mg"
+      },
+      {
+        "mineral_name": "Магний (Mg)",
+        "amount": "17mg"
+      },
+      {
+        "mineral_name": "Фосфор (P)",
+        "amount": "14mg"
+      },
+      {
+        "mineral_name": "Сера (S)",
+        "amount": "7.5mg"
+      },
+      {
+        "mineral_name": "Натрий (Na)",
+        "amount": "1mg"
+      },
+      {
+        "mineral_name": "Железо (Fe)",
+        "amount": "0.4mg"
+      },
+      {
+        "mineral_name": "Цинк (Zn)",
+        "amount": "0.15mg"
+      },
+      {
+        "mineral_name": "Марганец (Mn)",
+        "amount": "0.1mg"
+      },
+      {
+        "mineral_name": "Медь (Cu)",
+        "amount": "70mcg"
+      },
+      {
+        "mineral_name": "Селен (Se)",
+        "amount": "0.2mcg"
+      }
+    ],
+    "other_nutrients": [
+      {
+        "nutrient_name": "Углеводы (общие)",
+        "amount": "19.2g"
+      },
+      {
+        "nutrient_name": "Зола",
+        "amount": "0.7g"
+      },
+      {
+        "nutrient_name": "Моно- и дисахариды (сахара)",
+        "amount": "16.3g"
+      },
+      {
+        "nutrient_name": "бета-Каротин",
+        "amount": "0.09mg"
+      },
+      {
+        "nutrient_name": "Лютеин + Зеаксантин",
+        "amount": "9mcg"
+      },
+      {
+        "nutrient_name": "Фитостеролы",
+        "amount": "31mg"
+      },
+      {
+        "nutrient_name": "Аргинин",
+        "amount": "0.017g"
+      },
+      {
+        "nutrient_name": "Валин",
+        "amount": "0.028g"
+      },
+      {
+        "nutrient_name": "Гистидин",
+        "amount": "0.011g"
+      },
+      {
+        "nutrient_name": "Изолейцин",
+        "amount": "0.023g"
+      },
+      {
+        "nutrient_name": "Лейцин",
+        "amount": "0.033g"
+      },
+      {
+        "nutrient_name": "Лизин",
+        "amount": "0.03g"
+      },
+      {
+        "nutrient_name": "Метионин",
+        "amount": "0.006g"
+      },
+      {
+        "nutrient_name": "Треонин",
+        "amount": "0.024g"
+      },
+      {
+        "nutrient_name": "Триптофан",
+        "amount": "0.006g"
+      },
+      {
+        "nutrient_name": "Фенилаланин",
+        "amount": "0.018g"
+      },
+      {
+        "nutrient_name": "Аланин",
+        "amount": "0.045g"
+      },
+      {
+        "nutrient_name": "Аспарагиновая кислота",
+        "amount": "0.18g"
+      },
+      {
+        "nutrient_name": "Глицин",
+        "amount": "0.025g"
+      },
+      {
+        "nutrient_name": "Глутаминовая кислота",
+        "amount": "0.07g"
+      },
+      {
+        "nutrient_name": "Пролин",
+        "amount": "0.049g"
+      },
+      {
+        "nutrient_name": "Серин",
+        "amount": "0.037g"
+      },
+      {
+        "nutrient_name": "Тирозин",
+        "amount": "0.032g"
+      },
+      {
+        "nutrient_name": "Цистеин",
+        "amount": "0.012g"
+      },
+      {
+        "nutrient_name": "Омега-3 жирные кислоты",
+        "amount": "0.01g"
+      },
+      {
+        "nutrient_name": "Омега-6 жирные кислоты",
+        "amount": "0.14g"
+      },
+      {
+        "nutrient_name": "Насыщенные жирные кислоты",
+        "amount": "0.06g"
+      },
+      {
+        "nutrient_name": "Мононенасыщенные жирные кислоты",
+        "amount": "0.07g"
+      },
+      {
+        "nutrient_name": "Полиненасыщенные жирные кислоты",
+        "amount": "0.14g"
+      },
+      {
+        "nutrient_name": "16:0 Пальмитиновая",
+        "amount": "0.05g"
+      },
+      {
+        "nutrient_name": "18:0 Стеариновая",
+        "amount": "0.01g"
+      },
+      {
+        "nutrient_name": "18:1 Олеиновая",
+        "amount": "0.07g"
+      },
+      {
+        "nutrient_name": "18:2 Линолевая",
+        "amount": "0.14g"
+      },
+      {
+        "nutrient_name": "14:0 Миристиновая",
+        "amount": "0.0g"
+      }
+    ]
+  },
+  {
+    "name": "kiwi",
+    "display_name": "Киви",
+    "description": "Киви - сочный тропический фрукт с зеленой мякотью и коричневой пушистой кожурой. Имеет кисло-сладкий вкус и богат витамином C.",
+    "calories": 47,
+    "season": "октябрь-май",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Kiwi_%28Actinidia_chinensis%29_1_Luc_Viatour.jpg/640px-Kiwi_%28Actinidia_chinensis%29_1_Luc_Viatour.jpg",
+    "location": "Китай, Новая Зеландия, Италия, Греция",
+    "vitamins": [
+      {
+        "vitamin_name": "Витамин C",
+        "amount": "180.0mg"
+      },
+      {
+        "vitamin_name": "Витамин K",
+        "amount": "40mcg"
+      },
+      {
+        "vitamin_name": "Витамин E",
+        "amount": "0.3mg"
+      },
+      {
+        "vitamin_name": "Фолиевая кислота (B9)",
+        "amount": "25mcg"
+      },
+      {
+        "vitamin_name": "Витамин A",
+        "amount": "15mcg"
+      },
+      {
+        "vitamin_name": "Витамин B1",
+        "amount": "20mcg"
+      },
+      {
+        "vitamin_name": "Витамин B2",
+        "amount": "40mcg"
+      },
+      {
+        "vitamin_name": "Витамин B4 (холин)",
+        "amount": "7.8mg"
+      },
+      {
+        "vitamin_name": "Витамин B5",
+        "amount": "0.2mg"
+      },
+      {
+        "vitamin_name": "Витамин B6",
+        "amount": "63mcg"
+      },
+      {
+        "vitamin_name": "Витамин B3 (PP)",
+        "amount": "0.5mg"
+      }
+    ],
+      "fruit_nutrition": {
+    "proteins": 0.8,
+    "fats": 0.4,
+    "carbohydrates": 8.1,
+    "fiber": 3.8,
+    "water": 83.8
+      },
+    "minerals": [
+      {
+        "mineral_name": "Калий (K)",
+        "amount": "300mg"
+      },
+      {
+        "mineral_name": "Кальций (Ca)",
+        "amount": "40mg"
+      },
+      {
+        "mineral_name": "Магний (Mg)",
+        "amount": "25mg"
+      },
+      {
+        "mineral_name": "Фосфор (P)",
+        "amount": "34mg"
+      },
+      {
+        "mineral_name": "Сера (S)",
+        "amount": "11.4mg"
+      },
+      {
+        "mineral_name": "Кремний (Si)",
+        "amount": "13mg"
+      },
+      {
+        "mineral_name": "Хлор (Cl)",
+        "amount": "47mg"
+      },
+      {
+        "mineral_name": "Натрий (Na)",
+        "amount": "5mg"
+      },
+      {
+        "mineral_name": "Железо (Fe)",
+        "amount": "0.8mg"
+      },
+      {
+        "mineral_name": "Марганец (Mn)",
+        "amount": "0.1mg"
+      },
+      {
+        "mineral_name": "Медь (Cu)",
+        "amount": "130mcg"
+      },
+      {
+        "mineral_name": "Цинк (Zn)",
+        "amount": "0.14mg"
+      },
+      {
+        "mineral_name": "Селен (Se)",
+        "amount": "0.2mcg"
+      },
+      {
+        "mineral_name": "Алюминий (Al)",
+        "amount": "815mcg"
+      },
+      {
+        "mineral_name": "Бор (B)",
+        "amount": "100mcg"
+      },
+      {
+        "mineral_name": "Ванадий (V)",
+        "amount": "0.76mcg"
+      },
+      {
+        "mineral_name": "Йод (I)",
+        "amount": "2mcg"
+      },
+      {
+        "mineral_name": "Кобальт (Co)",
+        "amount": "1mcg"
+      },
+      {
+        "mineral_name": "Литий (Li)",
+        "amount": "0.7mcg"
+      },
+      {
+        "mineral_name": "Молибден (Mo)",
+        "amount": "10mcg"
+      },
+      {
+        "mineral_name": "Никель (Ni)",
+        "amount": "0.3mcg"
+      },
+      {
+        "mineral_name": "Рубидий (Rb)",
+        "amount": "44mcg"
+      },
+      {
+        "mineral_name": "Стронций (Sr)",
+        "amount": "121mcg"
+      },
+      {
+        "mineral_name": "Фтор (F)",
+        "amount": "14mcg"
+      },
+      {
+        "mineral_name": "Хром (Cr)",
+        "amount": "1.45mcg"
+      },
+      {
+        "mineral_name": "Цирконий (Zr)",
+        "amount": "10mcg"
+      }
+    ],
+    "other_nutrients": [
+      {
+        "nutrient_name": "Углеводы (общие)",
+        "amount": "11.9g"
+      },
+      {
+        "nutrient_name": "Органические кислоты",
+        "amount": "2.5g"
+      },
+      {
+        "nutrient_name": "Зола",
+        "amount": "0.6g"
+      },
+      {
+        "nutrient_name": "Крахмал и декстрины",
+        "amount": "0.3g"
+      },
+      {
+        "nutrient_name": "Моно- и дисахариды (сахара)",
+        "amount": "7.8g"
+      },
+      {
+        "nutrient_name": "бета-Каротин",
+        "amount": "0.09mg"
+      },
+      {
+        "nutrient_name": "Ниацин",
+        "amount": "0.4mg"
+      },
+      {
+        "nutrient_name": "Омега-3 жирные кислоты",
+        "amount": "0.04g"
+      },
+      {
+        "nutrient_name": "Омега-6 жирные кислоты",
+        "amount": "0.25g"
+      },
+      {
+        "nutrient_name": "Насыщенные жирные кислоты",
+        "amount": "0.1g"
+      }
+    ]
+  },
+  {
+    "name": "longan",
+    "display_name": "Лонган",
+    "description": "Маленький круглый фрукт с прозрачной сочной мякотью и сладким цветочным вкусом, родом из Юго-Восточной Азии",
+    "calories": 60,
+    "season": "Лето",
+    "location": "Китай, Таиланд, Вьетнам",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Longan_fruits.jpg",
+    "vitamins": [
+      {
+        "vitamin_name": "Витамин C",
+        "amount": "84.0mg"
+      },
+      {
+        "vitamin_name": "Витамин B1",
+        "amount": "31mcg"
+      },
+      {
+        "vitamin_name": "Витамин B2",
+        "amount": "0.14mg"
+      },
+      {
+        "vitamin_name": "Витамин B3 (PP)",
+        "amount": "0.3mg"
+      }
+    ],
+      "fruit_nutrition": {
+    "proteins": 1.3,
+    "fats": 0.1,
+    "carbohydrates": 14.0,
+    "fiber": 1.1,
+    "water": 82.8
+      },
+    "minerals": [
+      {
+        "mineral_name": "Калий (K)",
+        "amount": "266mg"
+      },
+      {
+        "mineral_name": "Фосфор (P)",
+        "amount": "21mg"
+      },
+      {
+        "mineral_name": "Магний (Mg)",
+        "amount": "10mg"
+      },
+      {
+        "mineral_name": "Кальций (Ca)",
+        "amount": "1mg"
+      },
+      {
+        "mineral_name": "Сера (S)",
+        "amount": "13.1mg"
+      },
+      {
+        "mineral_name": "Железо (Fe)",
+        "amount": "0.13mg"
+      },
+      {
+        "mineral_name": "Марганец (Mn)",
+        "amount": "0.05mg"
+      },
+      {
+        "mineral_name": "Медь (Cu)",
+        "amount": "169mcg"
+      },
+      {
+        "mineral_name": "Цинк (Zn)",
+        "amount": "0.05mg"
+      }
+    ],
+    "other_nutrients": [
+      {
+        "nutrient_name": "Углеводы (общие)",
+        "amount": "15.1g"
+      },
+      {
+        "nutrient_name": "Зола",
+        "amount": "0.7g"
+      },
+      {
+        "nutrient_name": "Аргинин",
+        "amount": "0.035g"
+      },
+      {
+        "nutrient_name": "Валин",
+        "amount": "0.058g"
+      },
+      {
+        "nutrient_name": "Гистидин",
+        "amount": "0.012g"
+      },
+      {
+        "nutrient_name": "Изолейцин",
+        "amount": "0.026g"
+      },
+      {
+        "nutrient_name": "Лейцин",
+        "amount": "0.054g"
+      },
+      {
+        "nutrient_name": "Лизин",
+        "amount": "0.046g"
+      },
+      {
+        "nutrient_name": "Метионин",
+        "amount": "0.013g"
+      },
+      {
+        "nutrient_name": "Треонин",
+        "amount": "0.034g"
+      },
+      {
+        "nutrient_name": "Фенилаланин",
+        "amount": "0.03g"
+      },
+      {
+        "nutrient_name": "Аланин",
+        "amount": "0.157g"
+      },
+      {
+        "nutrient_name": "Аспарагиновая кислота",
+        "amount": "0.13g"
+      },
+      {
+        "nutrient_name": "Глицин",
+        "amount": "0.042g"
+      },
+      {
+        "nutrient_name": "Глутаминовая кислота",
+        "amount": "0.21g"
+      },
+      {
+        "nutrient_name": "Пролин",
+        "amount": "0.042g"
+      },
+      {
+        "nutrient_name": "Серин",
+        "amount": "0.048g"
+      },
+      {
+        "nutrient_name": "Тирозин",
+        "amount": "0.025g"
+      }
+    ]
+  },
+  {
+    "name": "lychee",
+    "display_name": "Личи",
+    "description": "Личи - маленький круглый фрукт с красной кожурой и сладкой сочной мякотью, известный своим уникальным ароматом.",
+    "calories": 66,
+    "season": "Лето",
+    "location": "Китай, Тайвань, Вьетнам, Индия",
+    "image_url": "https://www.popsci.com/wp-content/uploads/2022/01/05/lychee-scaled.jpg?quality=85&w=2048",
+    "vitamins": [
+      {
+        "vitamin_name": "Витамин C",
+        "amount": "71.5mg"
+      },
+      {
+        "vitamin_name": "Витамин B1",
+        "amount": "11mcg"
+      },
+      {
+        "vitamin_name": "Витамин B2",
+        "amount": "65mcg"
+      },
+      {
+        "vitamin_name": "Витамин B3 (PP)",
+        "amount": "0.6mg"
+      },
+      {
+        "vitamin_name": "Витамин B4 (холин)",
+        "amount": "7.1mg"
+      },
+      {
+        "vitamin_name": "Витамин B6",
+        "amount": "0.1mg"
+      },
+      {
+        "vitamin_name": "Фолиевая кислота (B9)",
+        "amount": "14mcg"
+      },
+      {
+        "vitamin_name": "Витамин E",
+        "amount": "70mcg"
+      },
+      {
+        "vitamin_name": "Витамин K",
+        "amount": "0.4mcg"
+      }
+    ],
+      "fruit_nutrition": {
+    "proteins": 0.8,
+    "fats": 0.4,
+    "carbohydrates": 15.2,
+    "fiber": 1.3,
+    "water": 81.8
+  },
+    "minerals": [
+      {
+        "mineral_name": "Калий (K)",
+        "amount": "171mg"
+      },
+      {
+        "mineral_name": "Фосфор (P)",
+        "amount": "31mg"
+      },
+      {
+        "mineral_name": "Магний (Mg)",
+        "amount": "10mg"
+      },
+      {
+        "mineral_name": "Кальций (Ca)",
+        "amount": "5mg"
+      },
+      {
+        "mineral_name": "Сера (S)",
+        "amount": "8.3mg"
+      },
+      {
+        "mineral_name": "Натрий (Na)",
+        "amount": "1mg"
+      },
+      {
+        "mineral_name": "Железо (Fe)",
+        "amount": "0.31mg"
+      },
+      {
+        "mineral_name": "Марганец (Mn)",
+        "amount": "0.06mg"
+      },
+      {
+        "mineral_name": "Медь (Cu)",
+        "amount": "148mcg"
+      },
+      {
+        "mineral_name": "Цинк (Zn)",
+        "amount": "0.07mg"
+      },
+      {
+        "mineral_name": "Селен (Se)",
+        "amount": "0.6mcg"
+      }
+    ],
+    "other_nutrients": [
+      {
+        "nutrient_name": "Углеводы (общие)",
+        "amount": "16.5g"
+      },
+      {
+        "nutrient_name": "Зола",
+        "amount": "0.4g"
+      },
+      {
+        "nutrient_name": "Моно- и дисахариды (сахара)",
+        "amount": "15.2g"
+      },
+      {
+        "nutrient_name": "Лизин",
+        "amount": "0.041g"
+      },
+      {
+        "nutrient_name": "Метионин",
+        "amount": "0.009g"
+      },
+      {
+        "nutrient_name": "Триптофан",
+        "amount": "0.007g"
+      },
+      {
+        "nutrient_name": "Омега-3 жирные кислоты",
+        "amount": "0.07g"
+      },
+      {
+        "nutrient_name": "Омега-6 жирные кислоты",
+        "amount": "0.07g"
+      },
+      {
+        "nutrient_name": "Насыщенные жирные кислоты",
+        "amount": "0.1g"
+      },
+      {
+        "nutrient_name": "Мононенасыщенные жирные кислоты",
+        "amount": "0.12g"
+      },
+      {
+        "nutrient_name": "Полиненасыщенные жирные кислоты",
+        "amount": "0.13g"
+      },
+      {
+        "nutrient_name": "14:0 Миристиновая",
+        "amount": "0.0g"
+      },
+      {
+        "nutrient_name": "16:0 Пальмитиновая",
+        "amount": "0.07g"
+      },
+      {
+        "nutrient_name": "18:0 Стеариновая",
+        "amount": "0.02g"
+      },
+      {
+        "nutrient_name": "16:1 Пальмитолеиновая",
+        "amount": "0.0g"
+      },
+      {
+        "nutrient_name": "18:1 Олеиновая",
+        "amount": "0.12g"
+      },
+      {
+        "nutrient_name": "18:2 Линолевая",
+        "amount": "0.07g"
+      },
+      {
+        "nutrient_name": "18:3 Линоленовая",
+        "amount": "0.07g"
+      }
+    ]
+  },
+  {
+    "name": "orange",
+    "display_name": "Апельсин",
+    "description": "Апельсин - сочный цитрусовый фрукт с ярким сладким вкусом, богатый витамином C и антиоксидантами.",
+    "calories": 43,
+    "season": "Зима–Весна",
+    "location": "США, Бразилия, Испания, Индия",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Oranges_-_whole-halved-segment.jpg/1200px-Oranges_-_whole-halved-segment.jpg",
+    "vitamins": [
+      {
+        "vitamin_name": "Витамин C",
+        "amount": "60.0mg"
+      },
+      {
+        "vitamin_name": "Фолиевая кислота (B9)",
+        "amount": "5mcg"
+      },
+      {
+        "vitamin_name": "Витамин A",
+        "amount": "8mcg"
+      },
+      {
+        "vitamin_name": "Витамин B1",
+        "amount": "40mcg"
+      },
+      {
+        "vitamin_name": "Витамин B2",
+        "amount": "30mcg"
+      },
+      {
+        "vitamin_name": "Витамин B3 (PP)",
+        "amount": "0.3mg"
+      },
+      {
+        "vitamin_name": "Витамин B4 (холин)",
+        "amount": "8.4mg"
+      },
+      {
+        "vitamin_name": "Витамин B5",
+        "amount": "0.25mg"
+      },
+      {
+        "vitamin_name": "Витамин B6",
+        "amount": "60mcg"
+      },
+      {
+        "vitamin_name": "Витамин E",
+        "amount": "0.2mg"
+      },
+      {
+        "vitamin_name": "Витамин H (биотин)",
+        "amount": "1mcg"
+      }
+    ],
+      "fruit_nutrition": {
+    "proteins": 0.9,
+    "fats": 0.2,
+    "carbohydrates": 8.1,
+    "fiber": 2.2,
+    "water": 86.8
+  },
+    "minerals": [
+      {
+        "mineral_name": "Калий (K)",
+        "amount": "197mg"
+      },
+      {
+        "mineral_name": "Кальций (Ca)",
+        "amount": "34mg"
+      },
+      {
+        "mineral_name": "Магний (Mg)",
+        "amount": "13mg"
+      },
+      {
+        "mineral_name": "Фосфор (P)",
+        "amount": "23mg"
+      },
+      {
+        "mineral_name": "Сера (S)",
+        "amount": "9mg"
+      },
+      {
+        "mineral_name": "Кремний (Si)",
+        "amount": "6mg"
+      },
+      {
+        "mineral_name": "Натрий (Na)",
+        "amount": "13mg"
+      },
+      {
+        "mineral_name": "Хлор (Cl)",
+        "amount": "3mg"
+      },
+      {
+        "mineral_name": "Железо (Fe)",
+        "amount": "0.3mg"
+      },
+      {
+        "mineral_name": "Марганец (Mn)",
+        "amount": "0.03mg"
+      },
+      {
+        "mineral_name": "Медь (Cu)",
+        "amount": "67mcg"
+      },
+      {
+        "mineral_name": "Цинк (Zn)",
+        "amount": "0.2mg"
+      },
+      {
+        "mineral_name": "Селен (Se)",
+        "amount": "0.5mcg"
+      },
+      {
+        "mineral_name": "Алюминий (Al)",
+        "amount": "158mcg"
+      },
+      {
+        "mineral_name": "Бор (B)",
+        "amount": "180mcg"
+      },
+      {
+        "mineral_name": "Ванадий (V)",
+        "amount": "4mcg"
+      },
+      {
+        "mineral_name": "Йод (I)",
+        "amount": "2mcg"
+      },
+      {
+        "mineral_name": "Кобальт (Co)",
+        "amount": "1mcg"
+      },
+      {
+        "mineral_name": "Литий (Li)",
+        "amount": "21mcg"
+      },
+      {
+        "mineral_name": "Молибден (Mo)",
+        "amount": "0.9mcg"
+      },
+      {
+        "mineral_name": "Никель (Ni)",
+        "amount": "0.4mcg"
+      },
+      {
+        "mineral_name": "Рубидий (Rb)",
+        "amount": "27mcg"
+      },
+      {
+        "mineral_name": "Стронций (Sr)",
+        "amount": "8.2mcg"
+      },
+      {
+        "mineral_name": "Фтор (F)",
+        "amount": "17mcg"
+      },
+      {
+        "mineral_name": "Хром (Cr)",
+        "amount": "0.1mcg"
+      }
+    ],
+    "other_nutrients": [
+      {
+        "nutrient_name": "Углеводы (общие)",
+        "amount": "10.3g"
+      },
+      {
+        "nutrient_name": "Органические кислоты",
+        "amount": "1.3g"
+      },
+      {
+        "nutrient_name": "Зола",
+        "amount": "0.5g"
+      },
+      {
+        "nutrient_name": "Моно- и дисахариды (сахара)",
+        "amount": "8.1g"
+      },
+      {
+        "nutrient_name": "Глюкоза (декстроза)",
+        "amount": "2.4g"
+      },
+      {
+        "nutrient_name": "Сахароза",
+        "amount": "3.5g"
+      },
+      {
+        "nutrient_name": "Фруктоза",
+        "amount": "2.2g"
+      },
+      {
+        "nutrient_name": "бета-Каротин",
+        "amount": "0.05mg"
+      },
+      {
+        "nutrient_name": "Ниацин",
+        "amount": "0.2mg"
+      },
+      {
+        "nutrient_name": "Незаменимые аминокислоты",
+        "amount": "0.18g"
+      },
+      {
+        "nutrient_name": "Аргинин",
+        "amount": "0.056g"
+      },
+      {
+        "nutrient_name": "Валин",
+        "amount": "0.035g"
+      },
+      {
+        "nutrient_name": "Гистидин",
+        "amount": "0.015g"
+      },
+      {
+        "nutrient_name": "Изолейцин",
+        "amount": "0.027g"
+      },
+      {
+        "nutrient_name": "Лейцин",
+        "amount": "0.02g"
+      },
+      {
+        "nutrient_name": "Лизин",
+        "amount": "0.036g"
+      },
+      {
+        "nutrient_name": "Метионин",
+        "amount": "0.013g"
+      },
+      {
+        "nutrient_name": "Треонин",
+        "amount": "0.013g"
+      },
+      {
+        "nutrient_name": "Триптофан",
+        "amount": "0.006g"
+      },
+      {
+        "nutrient_name": "Фенилаланин",
+        "amount": "0.027g"
+      },
+      {
+        "nutrient_name": "Заменимые аминокислоты",
+        "amount": "0.47g"
+      },
+      {
+        "nutrient_name": "Аланин",
+        "amount": "0.043g"
+      },
+      {
+        "nutrient_name": "Аспарагиновая кислота",
+        "amount": "0.1g"
+      },
+      {
+        "nutrient_name": "Глицин",
+        "amount": "0.082g"
+      },
+      {
+        "nutrient_name": "Глутаминовая кислота",
+        "amount": "0.08g"
+      },
+      {
+        "nutrient_name": "Пролин",
+        "amount": "0.04g"
+      },
+      {
+        "nutrient_name": "Серин",
+        "amount": "0.028g"
+      },
+      {
+        "nutrient_name": "Тирозин",
+        "amount": "0.014g"
+      },
+      {
+        "nutrient_name": "Цистеин",
+        "amount": "0.009g"
+      },
+      {
+        "nutrient_name": "Омега-3 жирные кислоты",
+        "amount": "0.01g"
+      },
+      {
+        "nutrient_name": "Омега-6 жирные кислоты",
+        "amount": "0.03g"
+      },
+      {
+        "nutrient_name": "Насыщенные жирные кислоты",
+        "amount": "0.03g"
+      }
+    ]
+  },
+  {
+    "name": "pineapple",
+    "display_name": "Ананас",
+    "description": "Ананас - сладкий тропический фрукт с характерным ароматом и сочной мякотью, богатый витаминами и ферментами.",
+    "calories": 52,
+    "season": "Круглый год",
+    "location": "Гавайи, Филиппины, Бразилия, Тайвань",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/%E0%B4%95%E0%B5%88%E0%B4%A4%E0%B4%9A%E0%B5%8D%E0%B4%9A%E0%B4%95%E0%B5%8D%E0%B4%95.jpg",
+    "vitamins": [
+      {
+        "vitamin_name": "Витамин C",
+        "amount": "11.0mg"
+      },
+      {
+        "vitamin_name": "Витамин A",
+        "amount": "3mcg"
+      },
+      {
+        "vitamin_name": "Витамин B1",
+        "amount": "60mcg"
+      },
+      {
+        "vitamin_name": "Витамин B2",
+        "amount": "20mcg"
+      },
+      {
+        "vitamin_name": "Витамин B3 (PP)",
+        "amount": "0.4mg"
+      },
+      {
+        "vitamin_name": "Витамин B4 (холин)",
+        "amount": "5.4mg"
+      },
+      {
+        "vitamin_name": "Витамин B5",
+        "amount": "0.16mg"
+      },
+      {
+        "vitamin_name": "Витамин B6",
+        "amount": "0.1mg"
+      },
+      {
+        "vitamin_name": "Фолиевая кислота (B9)",
+        "amount": "5mcg"
+      },
+      {
+        "vitamin_name": "Витамин E",
+        "amount": "0.2mg"
+      },
+      {
+        "vitamin_name": "Витамин K",
+        "amount": "0.7mcg"
+      }
+    ],
+      "fruit_nutrition": {
+    "proteins": 0.3,
+    "fats": 0.1,
+    "carbohydrates": 11.8,
+    "fiber": 1.0,
+    "water": 85.5
+      },
+    "minerals": [
+      {
+        "mineral_name": "Калий (K)",
+        "amount": "134mg"
+      },
+      {
+        "mineral_name": "Кальций (Ca)",
+        "amount": "17mg"
+      },
+      {
+        "mineral_name": "Магний (Mg)",
+        "amount": "13mg"
+      },
+      {
+        "mineral_name": "Фосфор (P)",
+        "amount": "8mg"
+      },
+      {
+        "mineral_name": "Сера (S)",
+        "amount": "5.3mg"
+      },
+      {
+        "mineral_name": "Кремний (Si)",
+        "amount": "93mg"
+      },
+      {
+        "mineral_name": "Натрий (Na)",
+        "amount": "1mg"
+      },
+      {
+        "mineral_name": "Хлор (Cl)",
+        "amount": "47mg"
+      },
+      {
+        "mineral_name": "Железо (Fe)",
+        "amount": "0.3mg"
+      },
+      {
+        "mineral_name": "Марганец (Mn)",
+        "amount": "0.8mg"
+      },
+      {
+        "mineral_name": "Медь (Cu)",
+        "amount": "113mcg"
+      },
+      {
+        "mineral_name": "Цинк (Zn)",
+        "amount": "0.12mg"
+      },
+      {
+        "mineral_name": "Селен (Se)",
+        "amount": "0.1mcg"
+      },
+      {
+        "mineral_name": "Алюминий (Al)",
+        "amount": "30mcg"
+      },
+      {
+        "mineral_name": "Бор (B)",
+        "amount": "2.3mcg"
+      },
+      {
+        "mineral_name": "Ванадий (V)",
+        "amount": "4.1mcg"
+      },
+      {
+        "mineral_name": "Йод (I)",
+        "amount": "0.6mcg"
+      },
+      {
+        "mineral_name": "Кобальт (Co)",
+        "amount": "2.5mcg"
+      },
+      {
+        "mineral_name": "Литий (Li)",
+        "amount": "3mcg"
+      },
+      {
+        "mineral_name": "Молибден (Mo)",
+        "amount": "9.9mcg"
+      },
+      {
+        "mineral_name": "Никель (Ni)",
+        "amount": "20mcg"
+      },
+      {
+        "mineral_name": "Рубидий (Rb)",
+        "amount": "63mcg"
+      },
+      {
+        "mineral_name": "Стронций (Sr)",
+        "amount": "90mcg"
+      },
+      {
+        "mineral_name": "Фтор (F)",
+        "amount": "4.2mcg"
+      },
+      {
+        "mineral_name": "Хром (Cr)",
+        "amount": "10mcg"
+      }
+    ],
+    "other_nutrients": [
+      {
+        "nutrient_name": "Углеводы (общие)",
+        "amount": "12.8g"
+      },
+      {
+        "nutrient_name": "Органические кислоты",
+        "amount": "1.0g"
+      },
+      {
+        "nutrient_name": "Зола",
+        "amount": "0.3g"
+      },
+      {
+        "nutrient_name": "Моно- и дисахариды (сахара)",
+        "amount": "11.8g"
+      },
+      {
+        "nutrient_name": "бета-Каротин",
+        "amount": "0.02mg"
+      },
+      {
+        "nutrient_name": "Ниацин",
+        "amount": "0.3mg"
+      },
+      {
+        "nutrient_name": "Омега-3 жирные кислоты",
+        "amount": "0.06g"
+      },
+      {
+        "nutrient_name": "Омега-6 жирные кислоты",
+        "amount": "0.08g"
+      },
+      {
+        "nutrient_name": "Насыщенные жирные кислоты",
+        "amount": "0.03g"
+      }
+    ]
+  }
+]

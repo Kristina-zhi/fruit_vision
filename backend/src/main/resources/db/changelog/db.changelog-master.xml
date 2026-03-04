@@ -6,4 +6,8 @@
     <include file="db/changelog/changeset/001-create-users-table.xml"/>
     <include file="db/changelog/changeset/002-create-analyzes-table.xml"/>
     <include file="db/changelog/changeset/003-create-detections-table.xml"/>
+    <include file="db/changelog/changeset/004-create-fruits-table.xml"/>
+    <include file="db/changelog/changeset/005-create-fruit-nutrition-table.xml"/>
+    <include file="db/changelog/changeset/006-create-fruit-vitamins-table.xml"/>
+    <include file="db/changelog/changeset/007-create-fruit-minerals-table.xml"/>
 </databaseChangeLog>

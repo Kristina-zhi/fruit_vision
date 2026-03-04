@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
+    <changeSet id="005" author="fruit-vision">
+        <createTable tableName="fruit_nutrition">
+            <column name="id" type="BIGINT" autoIncrement="true"><constraints primaryKey="true" nullable="false"/></column>
+            <column name="fruit_id" type="BIGINT"><constraints nullable="false" unique="true" foreignKeyName="fk_nutrition_fruit" references="fruits(id)"/></column>
+            <column name="calories" type="INTEGER"><constraints nullable="false"/></column>
+            <column name="proteins" type="DOUBLE"><constraints nullable="false"/></column>
+            <column name="fats" type="DOUBLE"><constraints nullable="false"/></column>
+            <column name="carbohydrates" type="DOUBLE"><constraints nullable="false"/></column>
+            <column name="fiber" type="DOUBLE"><constraints nullable="false"/></column>
+            <column name="water" type="DOUBLE"><constraints nullable="false"/></column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
