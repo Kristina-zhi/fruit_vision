@@ -29,6 +29,12 @@ class ApiClient {
       getById: (id: number) => this.client.get(`/analyze/${id}`).then(r => r.data),
     };
   }
+
+  get fruits() {
+    return {
+      getByName: (name: string) => this.client.get(`/fruits/${encodeURIComponent(name)}`).then(r => r.data),
+    };
+  }
 }
 
 export const api = new ApiClient();

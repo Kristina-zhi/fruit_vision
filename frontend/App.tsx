@@ -12,12 +12,14 @@ import LoginScreen from './src/screens/LoginScreen';
 import CameraScreen from './src/screens/CameraScreen';
 import ResultsScreen from './src/screens/ResultsScreen';
 import HistoryScreen from './src/screens/HistoryScreen';
+import FruitInfoScreen from './src/screens/FruitInfoScreen';
 
 export type RootStackParamList = {
   Login: undefined;
   Camera: undefined;
   Results: { analyzeId: number };
   History: undefined;
+  FruitInfo: { name: string };
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -35,6 +37,7 @@ function AppContent() {
       <Stack.Screen name="Camera" component={CameraScreen} options={{ title: 'Camera' }} />
       <Stack.Screen name="Results" component={ResultsScreen} options={{ title: 'Results' }} />
       <Stack.Screen name="History" component={HistoryScreen} options={{ title: 'History' }} />
+      <Stack.Screen name="FruitInfo" component={FruitInfoScreen} options={{ title: 'Fruit' }} />
     </Stack.Navigator>
   );
 }
