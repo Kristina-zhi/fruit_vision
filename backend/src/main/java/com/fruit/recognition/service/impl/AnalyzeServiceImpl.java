@@ -3,12 +3,14 @@ package com.fruit.recognition.service.impl;
 import com.fruit.recognition.dto.AnalyzeResponse;
 import com.fruit.recognition.dto.BoundingBox;
 import com.fruit.recognition.dto.DetectionDto;
+import com.fruit.recognition.dto.FruitSummaryDto;
 import com.fruit.recognition.dto.HistoryResponse;
 import com.fruit.recognition.entity.Analyze;
 import com.fruit.recognition.entity.Detection;
 import com.fruit.recognition.repository.AnalyzeRepository;
 import com.fruit.recognition.service.AnalyzeService;
 import com.fruit.recognition.service.FileStorageService;
+import com.fruit.recognition.service.FruitService;
 import com.fruit.recognition.service.MlServiceClient;
 import com.fruit.recognition.service.UserService;
 import org.springframework.data.domain.PageRequest;
@@ -27,14 +29,17 @@ public class AnalyzeServiceImpl implements AnalyzeService {
     private final MlServiceClient mlServiceClient;
     private final FileStorageService fileStorageService;
     private final UserService userService;
+    private final FruitService fruitService;
     private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ISO_LOCAL_DATE_TIME.withZone(ZoneId.of("UTC"));
 
     public AnalyzeServiceImpl(AnalyzeRepository analyzeRepository, MlServiceClient mlServiceClient,
-                              FileStorageService fileStorageService, UserService userService) {
+                              FileStorageService fileStorageService, UserService userService,
+                              FruitService fruitService) {
         this.analyzeRepository = analyzeRepository;
         this.mlServiceClient = mlServiceClient;
         this.fileStorageService = fileStorageService;
         this.userService = userService;
+        this.fruitService = fruitService;
     }
 
     @Override @Transactional
@@ -80,6 +85,9 @@ public class AnalyzeServiceImpl implements AnalyzeService {
         return new AnalyzeResponse(analyze.getId(), analyze.getFileName(), analyze.getFilePath(),
             analyze.getAnalyzedAt().format(FORMATTER),
             analyze.getDetections().stream().map(d -> new DetectionDto(d.getClassId(), d.getClassName(), d.getConfidence(),
-                new BoundingBox(d.getXMin(), d.getYMin(), d.getXMax(), d.getYMax()))).collect(Collectors.toList()));
+                new BoundingBox(d.getXMin(), d.getYMin(), d.getXMax(), d.getYMax()),
+                fruitService.getByName(d.getClassName())
+                    .map(f -> new FruitSummaryDto(f.id(), f.name(), f.displayName(), f.calories(), f.imageUrl()))
+                    .orElse(null))).collect(Collectors.toList()));
     }
 }

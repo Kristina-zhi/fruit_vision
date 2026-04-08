@@ -36,7 +36,7 @@ public class MlServiceClientImpl implements MlServiceClient {
             var headers = new HttpHeaders();
             headers.setContentType(MediaType.MULTIPART_FORM_DATA);
             var requestEntity = new HttpEntity<>(body, headers);
-            return restTemplate.postForObject(mlServerUrl + "/predict", requestEntity, MlResponseDto.class);
+            return restTemplate.postForObject(mlServerUrl + "/predict/all", requestEntity, MlResponseDto.class);
         } catch (IOException e) {
             throw new RuntimeException("Failed to read image stream", e);
         }

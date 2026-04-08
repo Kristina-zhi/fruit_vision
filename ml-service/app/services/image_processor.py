@@ -19,6 +19,12 @@ def process_image(image_bytes: bytes, filename: str) -> dict:
         logger.error(f"Image processing error: {e}")
         return get_mock_detections()
 
+
+def process_image_all(image_bytes: bytes, filename: str) -> dict:
+    result = process_image(image_bytes, filename)
+    result["count"] = len(result.get("detections", []))
+    return result
+
 def parse_yolo_results(results, conf_threshold: float):
     detections = []
     if hasattr(results, 'xyxy'):
