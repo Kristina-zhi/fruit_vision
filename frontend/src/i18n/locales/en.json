@@ -49,5 +49,10 @@
   "hide_password": "Hide password",
   "no_fruits": "No fruits found",
   "daily_value": "% of daily value",
+  "daily_value_short": "% DV",
+  "indicator": "Indicator",
+  "value": "Value",
+  "vitamins": "Vitamins",
+  "minerals": "Minerals",
   "empty_history": "Scan history is empty"
 }

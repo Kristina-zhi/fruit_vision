@@ -49,5 +49,10 @@
   "hide_password": "Скрыть пароль",
   "no_fruits": "Фрукты не найдены",
   "daily_value": "% от суточной нормы",
+  "daily_value_short": "% РСП",
+  "indicator": "Показатель",
+  "value": "Значение",
+  "vitamins": "Витамины",
+  "minerals": "Минералы",
   "empty_history": "История сканирований пуста"
 }
