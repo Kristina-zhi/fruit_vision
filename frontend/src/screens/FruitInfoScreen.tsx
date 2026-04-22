@@ -16,6 +16,9 @@ import { colors } from '../theme/colors';
 import { api } from '../api/client';
 import { RootStackParamList } from '../../App';
 import NutritionTable from '../components/info/NutritionTable';
+import MacroChart from '../components/info/MacroChart';
+import VitaminsMineralsTable from '../components/info/VitaminsMineralsTable';
+import { FruitInfo } from '../types/fruit';
 
 type Nav = NativeStackNavigationProp<RootStackParamList, 'FruitInfo'>;
 type R = RouteProp<RootStackParamList, 'FruitInfo'>;
@@ -24,14 +27,14 @@ export default function FruitInfoScreen() {
   const route = useRoute<R>();
   const nav = useNavigation<Nav>();
   const { t } = useTranslation();
-  const [data, setData] = useState<any>(null);
+  const [data, setData] = useState<FruitInfo | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     let active = true;
     (async () => {
       try {
-        const result = await api.fruits.getByName(route.params.name);
+        const result: FruitInfo = await api.fruits.getByName(route.params.name);
         if (active) setData(result);
       } catch (err: any) {
         if (err?.response?.status === 404) {
@@ -81,7 +84,7 @@ export default function FruitInfoScreen() {
       </View>
 
       <View style={styles.content}>
-        <Text style={styles.description}>{data.description}</Text>
+        {data.description ? <Text style={styles.description}>{data.description}</Text> : null}
 
         <View style={styles.chips}>
           <View style={styles.chip}>
@@ -95,25 +98,8 @@ export default function FruitInfoScreen() {
         </View>
 
         <NutritionTable nutrition={data.nutrition} calories={data.calories} />
-
-        <View style={styles.card}>
-          <Text style={styles.cardTitle}>{t('vitamins_minerals')}</Text>
-          {data.vitamins?.map((item: any, index: number) => (
-            <View key={`v-${index}`} style={styles.nutrientRow}>
-              <Text style={styles.nutrientName}>{item.name}</Text>
-              <Text style={styles.nutrientAmount}>{item.amount}</Text>
-            </View>
-          ))}
-          {data.minerals?.map((item: any, index: number) => (
-            <View key={`m-${index}`} style={styles.nutrientRow}>
-              <Text style={styles.nutrientName}>{item.name}</Text>
-              <Text style={styles.nutrientAmount}>{item.amount}</Text>
-            </View>
-          ))}
-          {!data.vitamins?.length && !data.minerals?.length && (
-            <Text style={styles.muted}>{t('no_data')}</Text>
-          )}
-        </View>
+        <MacroChart nutrition={data.nutrition} />
+        <VitaminsMineralsTable vitamins={data.vitamins || []} minerals={data.minerals || []} />
       </View>
     </ScrollView>
   );
