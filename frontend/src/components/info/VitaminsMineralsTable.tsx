@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { useTranslation } from 'react-i18next';
-import { colors } from '../../theme/colors';
+import { ThemeColors } from '../../theme/colors';
+import { useTheme } from '../../theme/ThemeContext';
 import { Nutrient } from '../../types/fruit';
 
 interface Props {
@@ -9,23 +10,25 @@ interface Props {
   minerals: Nutrient[];
 }
 
-function NutrientGroup({ title, items }: { title: string; items: Nutrient[] }) {
-  if (!items.length) return null;
-  return (
-    <View style={styles.group}>
-      <Text style={styles.groupTitle}>{title}</Text>
-      {items.map((item, index) => (
-        <View key={`${item.name}-${index}`} style={styles.row}>
-          <Text style={styles.name}>{item.name}</Text>
-          <Text style={styles.amount}>{item.amount}</Text>
-        </View>
-      ))}
-    </View>
-  );
-}
-
 export default function VitaminsMineralsTable({ vitamins, minerals }: Props) {
   const { t } = useTranslation();
+  const { colors } = useTheme();
+  const styles = useMemo(() => createStyles(colors), [colors]);
+
+  const renderGroup = (title: string, items: Nutrient[]) => {
+    if (!items.length) return null;
+    return (
+      <View style={styles.group}>
+        <Text style={styles.groupTitle}>{title}</Text>
+        {items.map((item, index) => (
+          <View key={`${item.name}-${index}`} style={styles.row}>
+            <Text style={styles.name}>{item.name}</Text>
+            <Text style={styles.amount}>{item.amount}</Text>
+          </View>
+        ))}
+      </View>
+    );
+  };
 
   if (!vitamins.length && !minerals.length) {
     return (
@@ -39,13 +42,13 @@ export default function VitaminsMineralsTable({ vitamins, minerals }: Props) {
   return (
     <View style={styles.card}>
       <Text style={styles.title}>{t('vitamins_minerals')}</Text>
-      <NutrientGroup title={t('vitamins')} items={vitamins} />
-      <NutrientGroup title={t('minerals')} items={minerals} />
+      {renderGroup(t('vitamins'), vitamins)}
+      {renderGroup(t('minerals'), minerals)}
     </View>
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (colors: ThemeColors) => StyleSheet.create({
   card: { backgroundColor: colors.surface, borderRadius: 12, padding: 14, marginTop: 16, borderWidth: 1, borderColor: colors.border },
   title: { fontSize: 17, fontWeight: '600', color: colors.text, marginBottom: 10 },
   group: { marginBottom: 8 },

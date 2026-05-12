@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { useTranslation } from 'react-i18next';
-import { colors } from '../../theme/colors';
+import { ThemeColors } from '../../theme/colors';
+import { useTheme } from '../../theme/ThemeContext';
 import { Nutrition } from '../../types/fruit';
 import { dailyValuePercent, NutritionKey } from '../../utils/nutrition';
 
@@ -19,6 +20,8 @@ interface Row {
 
 export default function NutritionTable({ nutrition, calories }: Props) {
   const { t } = useTranslation();
+  const { colors } = useTheme();
+  const styles = useMemo(() => createStyles(colors), [colors]);
 
   const rows: Row[] = [
     { key: 'calories', label: t('calories'), value: nutrition?.calories ?? calories ?? 0, unit: t('kcal') },
@@ -53,7 +56,7 @@ export default function NutritionTable({ nutrition, calories }: Props) {
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (colors: ThemeColors) => StyleSheet.create({
   card: { backgroundColor: colors.surface, borderRadius: 12, padding: 14, borderWidth: 1, borderColor: colors.border },
   title: { fontSize: 17, fontWeight: '600', color: colors.text, marginBottom: 10 },
   row: { flexDirection: 'row', alignItems: 'center', paddingVertical: 7, borderBottomWidth: 1, borderBottomColor: colors.border },

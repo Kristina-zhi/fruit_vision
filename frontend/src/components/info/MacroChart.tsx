@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { useTranslation } from 'react-i18next';
-import { colors } from '../../theme/colors';
+import { ThemeColors } from '../../theme/colors';
+import { useTheme } from '../../theme/ThemeContext';
 import { Nutrition } from '../../types/fruit';
 import { macroDistribution } from '../../utils/nutrition';
 
@@ -11,13 +12,15 @@ interface Props {
 
 export default function MacroChart({ nutrition }: Props) {
   const { t } = useTranslation();
+  const { colors } = useTheme();
+  const styles = useMemo(() => createStyles(colors), [colors]);
   const shares = macroDistribution(nutrition);
   const total = shares.proteins + shares.fats + shares.carbohydrates;
 
   const entries = [
     { key: 'proteins', label: t('proteins'), value: shares.proteins, color: colors.primary },
     { key: 'fats', label: t('fats'), value: shares.fats, color: colors.accent },
-    { key: 'carbohydrates', label: t('carbohydrates'), value: shares.carbohydrates, color: '#42A5F5' },
+    { key: 'carbohydrates', label: t('carbohydrates'), value: shares.carbohydrates, color: colors.carbs },
   ];
 
   return (
@@ -50,7 +53,7 @@ export default function MacroChart({ nutrition }: Props) {
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (colors: ThemeColors) => StyleSheet.create({
   card: { backgroundColor: colors.surface, borderRadius: 12, padding: 14, marginTop: 16, borderWidth: 1, borderColor: colors.border },
   title: { fontSize: 17, fontWeight: '600', color: colors.text, marginBottom: 12 },
   bar: { flexDirection: 'row', height: 22, borderRadius: 11, overflow: 'hidden', backgroundColor: colors.border },

@@ -54,5 +54,9 @@
   "value": "Value",
   "vitamins": "Vitamins",
   "minerals": "Minerals",
+  "fill_all_fields": "Fill in all fields",
+  "camera_permission_message": "Allow camera access to scan fruits",
+  "grant_permission": "Grant access",
+  "detections_count": "{{count}} detections",
   "empty_history": "Scan history is empty"
 }

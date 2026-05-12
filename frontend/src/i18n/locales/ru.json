@@ -54,5 +54,9 @@
   "value": "Значение",
   "vitamins": "Витамины",
   "minerals": "Минералы",
+  "fill_all_fields": "Заполните все поля",
+  "camera_permission_message": "Разрешите доступ к камере для сканирования фруктов",
+  "grant_permission": "Разрешить доступ",
+  "detections_count": "Обнаружений: {{count}}",
   "empty_history": "История сканирований пуста"
 }

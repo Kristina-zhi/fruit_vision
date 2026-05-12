@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, DefaultTheme, DarkTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
@@ -8,6 +8,7 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import Toast from 'react-native-toast-message';
 import './src/i18n';
 import { AuthProvider } from './src/store/AuthContext';
+import { ThemeProvider, useTheme } from './src/theme/ThemeContext';
 import LoginScreen from './src/screens/LoginScreen';
 import CameraScreen from './src/screens/CameraScreen';
 import ResultsScreen from './src/screens/ResultsScreen';
@@ -25,12 +26,14 @@ export type RootStackParamList = {
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 function AppContent() {
+  const { colors } = useTheme();
   return (
     <Stack.Navigator
       screenOptions={{
-        headerStyle: { backgroundColor: '#4CAF50' },
-        headerTintColor: '#fff',
+        headerStyle: { backgroundColor: colors.primary },
+        headerTintColor: colors.white,
         headerTitleStyle: { fontWeight: 'bold' },
+        contentStyle: { backgroundColor: colors.background },
       }}
     >
       <Stack.Screen name="Login" component={LoginScreen} options={{ title: 'Fruit Vision' }} />
@@ -39,6 +42,32 @@ function AppContent() {
       <Stack.Screen name="History" component={HistoryScreen} options={{ title: 'History' }} />
       <Stack.Screen name="FruitInfo" component={FruitInfoScreen} options={{ title: 'Fruit' }} />
     </Stack.Navigator>
+  );
+}
+
+function AppNavigation() {
+  const { colors, isDark } = useTheme();
+  const baseTheme = isDark ? DarkTheme : DefaultTheme;
+  const navigationTheme = {
+    ...baseTheme,
+    colors: {
+      ...baseTheme.colors,
+      primary: colors.primary,
+      background: colors.background,
+      card: colors.surface,
+      text: colors.text,
+      border: colors.border,
+      notification: colors.accent,
+    },
+  };
+
+  return (
+    <>
+      <NavigationContainer theme={navigationTheme}>
+        <AppContent />
+      </NavigationContainer>
+      <StatusBar style={isDark ? 'light' : 'dark'} />
+    </>
   );
 }
 
@@ -56,12 +85,11 @@ export default function App() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <SafeAreaProvider>
-        <AuthProvider>
-          <NavigationContainer>
-            <AppContent />
-          </NavigationContainer>
-        </AuthProvider>
-        <StatusBar style="auto" />
+        <ThemeProvider>
+          <AuthProvider>
+            <AppNavigation />
+          </AuthProvider>
+        </ThemeProvider>
         <Toast />
       </SafeAreaProvider>
     </GestureHandlerRootView>
