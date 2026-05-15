@@ -6,7 +6,7 @@ import { StatusBar } from 'expo-status-bar';
 import * as SplashScreen from 'expo-splash-screen';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import Toast from 'react-native-toast-message';
-import './src/i18n';
+import { loadStoredLanguage } from './src/i18n';
 import { AuthProvider } from './src/store/AuthContext';
 import { ThemeProvider, useTheme } from './src/theme/ThemeContext';
 import LoginScreen from './src/screens/LoginScreen';
@@ -14,6 +14,7 @@ import CameraScreen from './src/screens/CameraScreen';
 import ResultsScreen from './src/screens/ResultsScreen';
 import HistoryScreen from './src/screens/HistoryScreen';
 import FruitInfoScreen from './src/screens/FruitInfoScreen';
+import SettingsScreen from './src/screens/SettingsScreen';
 
 export type RootStackParamList = {
   Login: undefined;
@@ -21,6 +22,7 @@ export type RootStackParamList = {
   Results: { analyzeId: number };
   History: undefined;
   FruitInfo: { name: string };
+  Settings: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -41,6 +43,7 @@ function AppContent() {
       <Stack.Screen name="Results" component={ResultsScreen} options={{ title: 'Results' }} />
       <Stack.Screen name="History" component={HistoryScreen} options={{ title: 'History' }} />
       <Stack.Screen name="FruitInfo" component={FruitInfoScreen} options={{ title: 'Fruit' }} />
+      <Stack.Screen name="Settings" component={SettingsScreen} options={{ title: 'Settings' }} />
     </Stack.Navigator>
   );
 }
@@ -76,6 +79,7 @@ export default function App() {
   useEffect(() => {
     async function prepare() {
       await SplashScreen.preventAutoHideAsync();
+      await loadStoredLanguage();
       setAppReady(true);
       await SplashScreen.hideAsync();
     }

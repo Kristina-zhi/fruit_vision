@@ -69,6 +69,7 @@ export default function CameraScreen() {
       <View style={styles.header}>
         <TouchableOpacity onPress={doLogout}><Text style={styles.logout}>{t('logout')}</Text></TouchableOpacity>
         <TouchableOpacity onPress={() => nav.navigate('History')}><Text style={styles.hist}>{t('history')}</Text></TouchableOpacity>
+        <TouchableOpacity onPress={() => nav.navigate('Settings')}><Text style={styles.hist}>{t('settings')}</Text></TouchableOpacity>
       </View>
       {uri ? (
         <Image source={{ uri }} style={styles.preview} />
@@ -94,7 +95,7 @@ export default function CameraScreen() {
 
 const createStyles = (colors: ThemeColors) => StyleSheet.create({
   container: { flex: 1, backgroundColor: colors.background },
-  header: { flexDirection: 'row', justifyContent: 'space-between', padding: 16 },
+  header: { flexDirection: 'row', justifyContent: 'space-between', padding: 16, gap: 16 },
   logout: { color: colors.error, fontSize: 16 },
   hist: { color: colors.primary, fontSize: 16 },
   preview: { flex: 1, resizeMode: 'contain', margin: 16 },
