@@ -2,6 +2,7 @@ package com.fruit.recognition.controller;
 
 import com.fruit.recognition.dto.ErrorResponse;
 import com.fruit.recognition.dto.FruitInfo;
+import com.fruit.recognition.dto.FruitSummaryDto;
 import com.fruit.recognition.service.FruitService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/fruits")
@@ -21,6 +23,12 @@ public class FruitController {
 
     public FruitController(FruitService fruitService) {
         this.fruitService = fruitService;
+    }
+
+    @Operation(summary = "Get all fruits")
+    @GetMapping
+    public ResponseEntity<List<FruitSummaryDto>> getAll() {
+        return ResponseEntity.ok(fruitService.getAll());
     }
 
     @Operation(summary = "Get fruit info by name")

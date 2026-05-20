@@ -1,12 +1,14 @@
 package com.fruit.recognition.service.impl;
 
 import com.fruit.recognition.dto.FruitInfo;
+import com.fruit.recognition.dto.FruitSummaryDto;
 import com.fruit.recognition.dto.MineralDto;
 import com.fruit.recognition.dto.NutritionInfo;
 import com.fruit.recognition.dto.VitaminDto;
 import com.fruit.recognition.entity.Fruit;
 import com.fruit.recognition.repository.FruitRepository;
 import com.fruit.recognition.service.FruitService;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -29,6 +31,14 @@ public class FruitServiceImpl implements FruitService {
             return Optional.empty();
         }
         return fruitRepository.findByNameIgnoreCase(name.trim()).map(this::mapToDto);
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public List<FruitSummaryDto> getAll() {
+        return fruitRepository.findAll(Sort.by(Sort.Direction.ASC, "name")).stream()
+            .map(f -> new FruitSummaryDto(f.getId(), f.getName(), f.getDisplayName(), f.getCalories(), f.getImageUrl()))
+            .collect(Collectors.toList());
     }
 
     private FruitInfo mapToDto(Fruit fruit) {
