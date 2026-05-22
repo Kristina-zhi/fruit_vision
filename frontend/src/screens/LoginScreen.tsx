@@ -30,7 +30,7 @@ export default function LoginScreen() {
     setLoad(true);
     try {
       reg ? await register(e, p) : await login(e, p);
-      nav.replace('Camera');
+      nav.replace('Home');
     } catch (err: any) {
       Toast.show({ type: 'error', text1: t('error'), text2: err.response?.data?.message || err.message });
     } finally {

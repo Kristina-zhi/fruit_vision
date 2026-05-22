@@ -15,6 +15,8 @@ import ResultsScreen from './src/screens/ResultsScreen';
 import HistoryScreen from './src/screens/HistoryScreen';
 import FruitInfoScreen from './src/screens/FruitInfoScreen';
 import SettingsScreen from './src/screens/SettingsScreen';
+import HomeScreen from './src/screens/HomeScreen';
+import FruitsScreen from './src/screens/FruitsScreen';
 
 export type RootStackParamList = {
   Login: undefined;
@@ -23,6 +25,8 @@ export type RootStackParamList = {
   History: undefined;
   FruitInfo: { name: string };
   Settings: undefined;
+  Home: undefined;
+  Fruits: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -39,11 +43,13 @@ function AppContent() {
       }}
     >
       <Stack.Screen name="Login" component={LoginScreen} options={{ title: 'Fruit Vision' }} />
+      <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Fruit Vision' }} />
       <Stack.Screen name="Camera" component={CameraScreen} options={{ title: 'Camera' }} />
       <Stack.Screen name="Results" component={ResultsScreen} options={{ title: 'Results' }} />
       <Stack.Screen name="History" component={HistoryScreen} options={{ title: 'History' }} />
       <Stack.Screen name="FruitInfo" component={FruitInfoScreen} options={{ title: 'Fruit' }} />
       <Stack.Screen name="Settings" component={SettingsScreen} options={{ title: 'Settings' }} />
+      <Stack.Screen name="Fruits" component={FruitsScreen} options={{ title: 'Fruits' }} />
     </Stack.Navigator>
   );
 }

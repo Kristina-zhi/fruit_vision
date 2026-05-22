@@ -1,5 +1,6 @@
 import axios, { AxiosInstance, InternalAxiosRequestConfig } from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { AnalyzeResponse, FruitInfo, FruitSummary, HistoryResponse } from '../types/fruit';
 
 const BASE_URL = 'http://10.0.2.2:8080/api';
 
@@ -24,15 +25,20 @@ class ApiClient {
 
   get analyze() {
     return {
-      analyzeImage: (file: FormData) => this.client.post('/analyze', file, { headers: { 'Content-Type': 'multipart/form-data' } }).then(r => r.data),
-      getHistory: (page = 0, size = 10) => this.client.get(`/analyze/history?page=${page}&size=${size}`).then(r => r.data),
-      getById: (id: number) => this.client.get(`/analyze/${id}`).then(r => r.data),
+      analyzeImage: (file: FormData): Promise<AnalyzeResponse> =>
+        this.client.post('/analyze', file, { headers: { 'Content-Type': 'multipart/form-data' } }).then(r => r.data),
+      getHistory: (page = 0, size = 10): Promise<HistoryResponse> =>
+        this.client.get(`/analyze/history?page=${page}&size=${size}`).then(r => r.data),
+      getById: (id: number): Promise<AnalyzeResponse> =>
+        this.client.get(`/analyze/${id}`).then(r => r.data),
     };
   }
 
   get fruits() {
     return {
-      getByName: (name: string) => this.client.get(`/fruits/${encodeURIComponent(name)}`).then(r => r.data),
+      list: (): Promise<FruitSummary[]> => this.client.get('/fruits').then(r => r.data),
+      getByName: (name: string): Promise<FruitInfo> =>
+        this.client.get(`/fruits/${encodeURIComponent(name)}`).then(r => r.data),
     };
   }
 }
