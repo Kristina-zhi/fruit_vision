@@ -1,5 +1,5 @@
 server:
-  port: \
+  port: ${SERVER_PORT:8080}
   servlet:
     encoding:
       charset: UTF-8
@@ -10,9 +10,9 @@ spring:
   application:
     name: fruit-recognition
   datasource:
-    url: jdbc:postgresql://\:\/\
-    username: \
-    password: \
+    url: "jdbc:postgresql://${PG_HOST:localhost}:${PG_PORT:5432}/${PG_NAME:fruit_recognition}"
+    username: ${PG_USER:postgres}
+    password: ${PG_PASSWORD:postgres}
     driver-class-name: org.postgresql.Driver
     hikari:
       maximum-pool-size: 10
@@ -42,24 +42,24 @@ spring:
     time-zone: UTC
   servlet:
     multipart:
-      max-file-size: 50MB
-      max-request-size: 50MB
+      max-file-size: 10MB
+      max-request-size: 12MB
   web:
     locale: ru_RU
 
 ml:
   server:
-    url: \
+    url: ${ML_SERVER_URL:http://localhost:8000}
 
 app:
-  upload-dir: \
+  upload-dir: ${UPLOAD_DIR:uploads}
   jwt:
-    secret: \
-    access-expiration: 3600000
-    refresh-expiration: 2592000000
+    secret: ${JWT_SECRET:qBTmv4oX3kId1qYx2F5Ra8LfTg7ZwH0uN6Vc9bDsEjMAWpCr}
+    access-expiration: ${JWT_ACCESS_EXPIRATION:3600000}
+    refresh-expiration: ${JWT_REFRESH_EXPIRATION:2592000000}
 
 cors:
-  allowed-origins: \
+  allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:3000,http://localhost:8081,http://localhost:19006}
 
 logging:
   level:
@@ -70,8 +70,8 @@ logging:
     org.hibernate.SQL: WARN
     liquibase: INFO
   file:
-    path: logs
-    name: logs/app.log
+    path: ${LOG_DIR:logs}
+    name: ${LOG_DIR:logs}/app.log
   logback:
     rollingpolicy:
       max-history: 30
@@ -83,4 +83,3 @@ springdoc:
     path: /swagger-ui.html
   api-docs:
     path: /api-docs
-  show-actuator: false
